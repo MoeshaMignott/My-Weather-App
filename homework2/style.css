@@ -1,5 +1,5 @@
 body {
-  background-image: url("../image/sky.jpg");
+ background-image: url("../image/sky.jpg");
   display: block;
   margin: 0 auto;
   margin-top: 50px;
@@ -89,4 +89,8 @@ button {
   margin: 0 auto;
   padding: 10px 20px;
   margin-bottom: 15px;
+}
+p {
+  color: black;
+  text-align: center;
 }
