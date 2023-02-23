@@ -1,0 +1,110 @@
+body {
+  background-image: url("../image/sky.jpg");
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px auto;
+  border: 2px solid gray;
+  border-radius: 20px 10px 20px 10px;
+  width: 60%;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(0, 132, 255);
+  border: 0px solid black;
+  border-radius: 1px 1px 1px 1px;
+  box-shadow: 0px 5px 5px rgb(92, 90, 90);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+}
+h2 {
+  display: inline-flex;
+  font-size: 50px;
+  font-family: "Sofia Sans", sans-serif;
+  margin-top: -20px;
+  margin-left: 10px;
+  padding-top: 0 auto;
+  color: #086696;
+}
+h3 {
+  font-size: 60px;
+  padding-left: 50px;
+  color: rgb(0, 132, 255);
+}
+h4 {
+  margin-left: 10px;
+  color: grey;
+}
+#temperature {
+  font-size: 55px;
+  color: #fff1eb;
+  font-family: "Sofia Sans", sans-serif;
+  margin-left: 10px;
+}
+.city {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.forecast {
+  font-size: xx-large;
+  font-family: "Sofia Sans", sans-serif;
+  margin-left: 10px;
+  color: gray;
+}
+
+li {
+  text-align: right;
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 250px;
+  font-size: large;
+  font-family: "Roboto Slab", serif;
+  color: rgb(3, 139, 3);
+  margin-bottom: -20px;
+  padding: 0 auto;
+}
+.compass {
+  margin: 0 auto;
+  display: block;
+  color: #086696;
+  padding: 0px;
+  float: right;
+  margin-right: 300px;
+  margin-top: -50px;
+}
+.col-2 {
+  border-radius: 10px auto;
+  border: 2px solid rgb(66, 110, 151);
+  margin: 5px auto;
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: xx-large;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+#degree {
+  font-size: 20px;
+  color: #fff1eb;
+}
+#degree:hover {
+  color: black;
+  cursor: pointer;
+}
+button {
+  color: #fff1eb;
+  background-color: green;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
