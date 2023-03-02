@@ -25,9 +25,9 @@ h1 {
 }
 h2 {
   display: inline-flex;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Sofia Sans", sans-serif;
-  margin-top: -20px;
+  margin-top: -50px;
   margin-left: 10px;
   padding-top: 0 auto;
   color: #086696;
@@ -39,7 +39,7 @@ h3 {
 }
 h4 {
   margin-left: 10px;
-  color: grey;
+  color: white;
 }
 #temperature {
   font-size: 55px;
@@ -63,13 +63,14 @@ li {
   text-align: right;
   list-style: none;
   margin-top: 10px;
-  margin-right: 250px;
+  margin-right: 230px;
   font-size: large;
   font-family: "Roboto Slab", serif;
   color: rgb(3, 139, 3);
   margin-bottom: -20px;
   padding: 10px 0px 10px 0px;
 }
+
 .compass {
   margin: 0 auto;
   display: block;
@@ -80,14 +81,15 @@ li {
   margin-top: -50px;
 }
 .col-2 {
-  border-radius: 10px auto;
+  border-radius: 5px auto;
   border: 2px solid rgb(66, 110, 151);
   margin: 5px auto;
   margin-bottom: 15px;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
   box-sizing: border-box;
   display: inline-block;
-  font-size: xx-large;
+  font-size: small;
+  font-weight: bold;
   font-family: "Roboto Slab", serif;
   text-align: center;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
@@ -101,12 +103,14 @@ li {
   cursor: pointer;
 }
 button {
-  color: #fff1eb;
-  background-color: green;
+  color: rgb(0, 132, 255);
+  font-family: "Roboto Slab", serif;
+  background-color: white;
   display: block;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 2px 5px;
   margin-bottom: 15px;
+  display: inline-block;
 }
 .forecastDate {
   font-size: small;

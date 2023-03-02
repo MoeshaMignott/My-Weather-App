@@ -64,7 +64,7 @@ function displayForecast(response) {
         <div class="forecastTemp">
           <span class="tempMax"> ${Math.round(
             weekDay.temperature.maximum
-          )}° </span>
+          )}°/ </span>
           <span class="tempMin"> ${Math.round(
             weekDay.temperature.minimum
           )}° </span>
