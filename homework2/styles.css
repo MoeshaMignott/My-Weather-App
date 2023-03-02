@@ -108,6 +108,12 @@ button {
   padding: 10px 20px;
   margin-bottom: 15px;
 }
+.forecastDate {
+  font-size: small;
+}
+.forecastTemp {
+  font-size: small;
+}
 footer {
   text-align: center;
 }

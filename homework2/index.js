@@ -35,7 +35,7 @@ let month = months[now.getMonth()];
 let day = days[now.getDay()];
 h4.innerHTML = `${day} ${month} ${date}, ${year} ${hours}: ${minutes}`;
 
-function weekDay(timestamp) {
+function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -55,17 +55,19 @@ function displayForecast(response) {
         forecastHTML +
         `
      <div class="col-2">
-        <div class="forecastDate">${weekDay(weekDay.dt)}</div>
+        <div class="forecastDate">${formatDay(weekDay.time)}</div>
         <img
-          src="http://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png"
+          src="${weekDay.condition.icon_url}"
           alt=""
           width="45"
         />
         <div class="forecastTemp">
-          <span class="tempMax"> ${Math.round(weekDay.temp.max)}° </span>
-          <span class="tempMin"> ${Math.round(weekDay.temp.min)}° </span>
+          <span class="tempMax"> ${Math.round(
+            weekDay.temperature.maximum
+          )}° </span>
+          <span class="tempMin"> ${Math.round(
+            weekDay.temperature.minimum
+          )}° </span>
         </div>
       </div>
   `;
@@ -77,8 +79,8 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "40b745c14eadad7b7c4e6e4bf3b70103";
-  let apiUrl = ` https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&appid=${apiKey}&units=metric`;
+  let apiKey = "6030abfae06e6e9o5c437cb3ta3e4513";
+  let apiUrl = ` https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
